@@ -1,0 +1,1062 @@
+{
+  "rootDir": "/Users/liltommy/Desktop/Study/KTPM/Labs/Lab2",
+  "nodes": [
+    {
+      "id": "microservices-demo/src/currencyservice/client.js",
+      "path": "microservices-demo/src/currencyservice/client.js",
+      "language": "javascript"
+    },
+    {
+      "id": "microservices-demo/src/currencyservice/server.js",
+      "path": "microservices-demo/src/currencyservice/server.js",
+      "language": "javascript"
+    },
+    {
+      "id": "microservices-demo/src/paymentservice/charge.js",
+      "path": "microservices-demo/src/paymentservice/charge.js",
+      "language": "javascript"
+    },
+    {
+      "id": "microservices-demo/src/paymentservice/logger.js",
+      "path": "microservices-demo/src/paymentservice/logger.js",
+      "language": "javascript"
+    },
+    {
+      "id": "microservices-demo/src/paymentservice/server.js",
+      "path": "microservices-demo/src/paymentservice/server.js",
+      "language": "javascript"
+    },
+    {
+      "id": "microservices-demo/src/paymentservice/index.js",
+      "path": "microservices-demo/src/paymentservice/index.js",
+      "language": "javascript"
+    },
+    {
+      "id": "microservices-demo/kustomize/components/shopping-assistant/scripts/generate_sql_from_products.py",
+      "path": "microservices-demo/kustomize/components/shopping-assistant/scripts/generate_sql_from_products.py",
+      "language": "python"
+    },
+    {
+      "id": "microservices-demo/src/emailservice/demo_pb2.py",
+      "path": "microservices-demo/src/emailservice/demo_pb2.py",
+      "language": "python"
+    },
+    {
+      "id": "microservices-demo/src/emailservice/demo_pb2_grpc.py",
+      "path": "microservices-demo/src/emailservice/demo_pb2_grpc.py",
+      "language": "python"
+    },
+    {
+      "id": "microservices-demo/src/emailservice/email_client.py",
+      "path": "microservices-demo/src/emailservice/email_client.py",
+      "language": "python"
+    },
+    {
+      "id": "microservices-demo/src/emailservice/email_server.py",
+      "path": "microservices-demo/src/emailservice/email_server.py",
+      "language": "python"
+    },
+    {
+      "id": "microservices-demo/src/emailservice/logger.py",
+      "path": "microservices-demo/src/emailservice/logger.py",
+      "language": "python"
+    },
+    {
+      "id": "microservices-demo/src/loadgenerator/locustfile.py",
+      "path": "microservices-demo/src/loadgenerator/locustfile.py",
+      "language": "python"
+    },
+    {
+      "id": "microservices-demo/src/recommendationservice/client.py",
+      "path": "microservices-demo/src/recommendationservice/client.py",
+      "language": "python"
+    },
+    {
+      "id": "microservices-demo/src/recommendationservice/demo_pb2.py",
+      "path": "microservices-demo/src/recommendationservice/demo_pb2.py",
+      "language": "python"
+    },
+    {
+      "id": "microservices-demo/src/recommendationservice/demo_pb2_grpc.py",
+      "path": "microservices-demo/src/recommendationservice/demo_pb2_grpc.py",
+      "language": "python"
+    },
+    {
+      "id": "microservices-demo/src/recommendationservice/logger.py",
+      "path": "microservices-demo/src/recommendationservice/logger.py",
+      "language": "python"
+    },
+    {
+      "id": "microservices-demo/src/recommendationservice/recommendation_server.py",
+      "path": "microservices-demo/src/recommendationservice/recommendation_server.py",
+      "language": "python"
+    },
+    {
+      "id": "microservices-demo/src/shoppingassistantservice/shoppingassistantservice.py",
+      "path": "microservices-demo/src/shoppingassistantservice/shoppingassistantservice.py",
+      "language": "python"
+    }
+  ],
+  "edges": [
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/currencyservice/client.js",
+      "to": "@google-cloud/trace-agent",
+      "specifier": "@google-cloud/trace-agent",
+      "resolvedPath": "@google-cloud/trace-agent",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/currencyservice/client.js",
+      "to": "path",
+      "specifier": "path",
+      "resolvedPath": "path",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/currencyservice/client.js",
+      "to": "grpc",
+      "specifier": "grpc",
+      "resolvedPath": "grpc",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/currencyservice/client.js",
+      "to": "pino",
+      "specifier": "pino",
+      "resolvedPath": "pino",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/currencyservice/server.js",
+      "to": "pino",
+      "specifier": "pino",
+      "resolvedPath": "pino",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/currencyservice/server.js",
+      "to": "@google-cloud/profiler",
+      "specifier": "@google-cloud/profiler",
+      "resolvedPath": "@google-cloud/profiler",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/currencyservice/server.js",
+      "to": "@opentelemetry/instrumentation-grpc",
+      "specifier": "@opentelemetry/instrumentation-grpc",
+      "resolvedPath": "@opentelemetry/instrumentation-grpc",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/currencyservice/server.js",
+      "to": "@opentelemetry/instrumentation",
+      "specifier": "@opentelemetry/instrumentation",
+      "resolvedPath": "@opentelemetry/instrumentation",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/currencyservice/server.js",
+      "to": "@opentelemetry/resources",
+      "specifier": "@opentelemetry/resources",
+      "resolvedPath": "@opentelemetry/resources",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/currencyservice/server.js",
+      "to": "@opentelemetry/semantic-conventions",
+      "specifier": "@opentelemetry/semantic-conventions",
+      "resolvedPath": "@opentelemetry/semantic-conventions",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/currencyservice/server.js",
+      "to": "@opentelemetry/sdk-node",
+      "specifier": "@opentelemetry/sdk-node",
+      "resolvedPath": "@opentelemetry/sdk-node",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/currencyservice/server.js",
+      "to": "@opentelemetry/exporter-otlp-grpc",
+      "specifier": "@opentelemetry/exporter-otlp-grpc",
+      "resolvedPath": "@opentelemetry/exporter-otlp-grpc",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/currencyservice/server.js",
+      "to": "path",
+      "specifier": "path",
+      "resolvedPath": "path",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/currencyservice/server.js",
+      "to": "@grpc/grpc-js",
+      "specifier": "@grpc/grpc-js",
+      "resolvedPath": "@grpc/grpc-js",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/currencyservice/server.js",
+      "to": "@grpc/proto-loader",
+      "specifier": "@grpc/proto-loader",
+      "resolvedPath": "@grpc/proto-loader",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/currencyservice/server.js",
+      "to": "./data/currency_conversion.json",
+      "specifier": "./data/currency_conversion.json",
+      "resolvedPath": "./data/currency_conversion.json",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/paymentservice/charge.js",
+      "to": "simple-card-validator",
+      "specifier": "simple-card-validator",
+      "resolvedPath": "simple-card-validator",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/paymentservice/charge.js",
+      "to": "uuid",
+      "specifier": "uuid",
+      "resolvedPath": "uuid",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/paymentservice/charge.js",
+      "to": "pino",
+      "specifier": "pino",
+      "resolvedPath": "pino",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/paymentservice/logger.js",
+      "to": "pino",
+      "specifier": "pino",
+      "resolvedPath": "pino",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/paymentservice/server.js",
+      "to": "path",
+      "specifier": "path",
+      "resolvedPath": "path",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/paymentservice/server.js",
+      "to": "@grpc/grpc-js",
+      "specifier": "@grpc/grpc-js",
+      "resolvedPath": "@grpc/grpc-js",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/paymentservice/server.js",
+      "to": "@grpc/proto-loader",
+      "specifier": "@grpc/proto-loader",
+      "resolvedPath": "@grpc/proto-loader",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/paymentservice/server.js",
+      "to": "microservices-demo/src/paymentservice/charge.js",
+      "specifier": "./charge",
+      "resolvedPath": "/Users/liltommy/Desktop/Study/KTPM/Labs/Lab2/microservices-demo/src/paymentservice/charge.js",
+      "unresolved": false
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/paymentservice/server.js",
+      "to": "microservices-demo/src/paymentservice/logger.js",
+      "specifier": "./logger",
+      "resolvedPath": "/Users/liltommy/Desktop/Study/KTPM/Labs/Lab2/microservices-demo/src/paymentservice/logger.js",
+      "unresolved": false
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/paymentservice/index.js",
+      "to": "microservices-demo/src/paymentservice/logger.js",
+      "specifier": "./logger",
+      "resolvedPath": "/Users/liltommy/Desktop/Study/KTPM/Labs/Lab2/microservices-demo/src/paymentservice/logger.js",
+      "unresolved": false
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/paymentservice/index.js",
+      "to": "@google-cloud/profiler",
+      "specifier": "@google-cloud/profiler",
+      "resolvedPath": "@google-cloud/profiler",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/paymentservice/index.js",
+      "to": "@opentelemetry/resources",
+      "specifier": "@opentelemetry/resources",
+      "resolvedPath": "@opentelemetry/resources",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/paymentservice/index.js",
+      "to": "@opentelemetry/semantic-conventions",
+      "specifier": "@opentelemetry/semantic-conventions",
+      "resolvedPath": "@opentelemetry/semantic-conventions",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/paymentservice/index.js",
+      "to": "@opentelemetry/instrumentation-grpc",
+      "specifier": "@opentelemetry/instrumentation-grpc",
+      "resolvedPath": "@opentelemetry/instrumentation-grpc",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/paymentservice/index.js",
+      "to": "@opentelemetry/instrumentation",
+      "specifier": "@opentelemetry/instrumentation",
+      "resolvedPath": "@opentelemetry/instrumentation",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/paymentservice/index.js",
+      "to": "@opentelemetry/sdk-node",
+      "specifier": "@opentelemetry/sdk-node",
+      "resolvedPath": "@opentelemetry/sdk-node",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/paymentservice/index.js",
+      "to": "@opentelemetry/exporter-otlp-grpc",
+      "specifier": "@opentelemetry/exporter-otlp-grpc",
+      "resolvedPath": "@opentelemetry/exporter-otlp-grpc",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/paymentservice/index.js",
+      "to": "path",
+      "specifier": "path",
+      "resolvedPath": "path",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/paymentservice/index.js",
+      "to": "microservices-demo/src/paymentservice/server.js",
+      "specifier": "./server",
+      "resolvedPath": "/Users/liltommy/Desktop/Study/KTPM/Labs/Lab2/microservices-demo/src/paymentservice/server.js",
+      "unresolved": false
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/kustomize/components/shopping-assistant/scripts/generate_sql_from_products.py",
+      "to": "json",
+      "specifier": "json",
+      "resolvedPath": "json",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/emailservice/demo_pb2.py",
+      "to": "google.protobuf.internal.builder",
+      "specifier": "google.protobuf.internal.builder",
+      "resolvedPath": "google.protobuf.internal.builder",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/emailservice/demo_pb2.py",
+      "to": "google.protobuf.descriptor",
+      "specifier": "google.protobuf.descriptor",
+      "resolvedPath": "google.protobuf.descriptor",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/emailservice/demo_pb2.py",
+      "to": "google.protobuf.descriptor_pool",
+      "specifier": "google.protobuf.descriptor_pool",
+      "resolvedPath": "google.protobuf.descriptor_pool",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/emailservice/demo_pb2.py",
+      "to": "google.protobuf.symbol_database",
+      "specifier": "google.protobuf.symbol_database",
+      "resolvedPath": "google.protobuf.symbol_database",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/emailservice/demo_pb2_grpc.py",
+      "to": "grpc",
+      "specifier": "grpc",
+      "resolvedPath": "grpc",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/emailservice/demo_pb2_grpc.py",
+      "to": "demo_pb2",
+      "specifier": "demo_pb2",
+      "resolvedPath": "demo_pb2",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/emailservice/email_client.py",
+      "to": "grpc",
+      "specifier": "grpc",
+      "resolvedPath": "grpc",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/emailservice/email_client.py",
+      "to": "demo_pb2",
+      "specifier": "demo_pb2",
+      "resolvedPath": "demo_pb2",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/emailservice/email_client.py",
+      "to": "demo_pb2_grpc",
+      "specifier": "demo_pb2_grpc",
+      "resolvedPath": "demo_pb2_grpc",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/emailservice/email_client.py",
+      "to": "logger.getJSONLogger",
+      "specifier": "logger.getJSONLogger",
+      "resolvedPath": "logger.getJSONLogger",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/emailservice/email_server.py",
+      "to": "concurrent.futures",
+      "specifier": "concurrent.futures",
+      "resolvedPath": "concurrent.futures",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/emailservice/email_server.py",
+      "to": "argparse",
+      "specifier": "argparse",
+      "resolvedPath": "argparse",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/emailservice/email_server.py",
+      "to": "os",
+      "specifier": "os",
+      "resolvedPath": "os",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/emailservice/email_server.py",
+      "to": "sys",
+      "specifier": "sys",
+      "resolvedPath": "sys",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/emailservice/email_server.py",
+      "to": "time",
+      "specifier": "time",
+      "resolvedPath": "time",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/emailservice/email_server.py",
+      "to": "grpc",
+      "specifier": "grpc",
+      "resolvedPath": "grpc",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/emailservice/email_server.py",
+      "to": "traceback",
+      "specifier": "traceback",
+      "resolvedPath": "traceback",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/emailservice/email_server.py",
+      "to": "jinja2.Environment",
+      "specifier": "jinja2.Environment",
+      "resolvedPath": "jinja2.Environment",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/emailservice/email_server.py",
+      "to": "jinja2.FileSystemLoader",
+      "specifier": "jinja2.FileSystemLoader",
+      "resolvedPath": "jinja2.FileSystemLoader",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/emailservice/email_server.py",
+      "to": "jinja2.select_autoescape",
+      "specifier": "jinja2.select_autoescape",
+      "resolvedPath": "jinja2.select_autoescape",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/emailservice/email_server.py",
+      "to": "jinja2.TemplateError",
+      "specifier": "jinja2.TemplateError",
+      "resolvedPath": "jinja2.TemplateError",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/emailservice/email_server.py",
+      "to": "google.api_core.exceptions.GoogleAPICallError",
+      "specifier": "google.api_core.exceptions.GoogleAPICallError",
+      "resolvedPath": "google.api_core.exceptions.GoogleAPICallError",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/emailservice/email_server.py",
+      "to": "google.auth.exceptions.DefaultCredentialsError",
+      "specifier": "google.auth.exceptions.DefaultCredentialsError",
+      "resolvedPath": "google.auth.exceptions.DefaultCredentialsError",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/emailservice/email_server.py",
+      "to": "demo_pb2",
+      "specifier": "demo_pb2",
+      "resolvedPath": "demo_pb2",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/emailservice/email_server.py",
+      "to": "demo_pb2_grpc",
+      "specifier": "demo_pb2_grpc",
+      "resolvedPath": "demo_pb2_grpc",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/emailservice/email_server.py",
+      "to": "grpc_health.v1.health_pb2",
+      "specifier": "grpc_health.v1.health_pb2",
+      "resolvedPath": "grpc_health.v1.health_pb2",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/emailservice/email_server.py",
+      "to": "grpc_health.v1.health_pb2_grpc",
+      "specifier": "grpc_health.v1.health_pb2_grpc",
+      "resolvedPath": "grpc_health.v1.health_pb2_grpc",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/emailservice/email_server.py",
+      "to": "opentelemetry.trace",
+      "specifier": "opentelemetry.trace",
+      "resolvedPath": "opentelemetry.trace",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/emailservice/email_server.py",
+      "to": "opentelemetry.instrumentation.grpc.GrpcInstrumentorServer",
+      "specifier": "opentelemetry.instrumentation.grpc.GrpcInstrumentorServer",
+      "resolvedPath": "opentelemetry.instrumentation.grpc.GrpcInstrumentorServer",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/emailservice/email_server.py",
+      "to": "opentelemetry.sdk.trace.TracerProvider",
+      "specifier": "opentelemetry.sdk.trace.TracerProvider",
+      "resolvedPath": "opentelemetry.sdk.trace.TracerProvider",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/emailservice/email_server.py",
+      "to": "opentelemetry.sdk.trace.export.BatchSpanProcessor",
+      "specifier": "opentelemetry.sdk.trace.export.BatchSpanProcessor",
+      "resolvedPath": "opentelemetry.sdk.trace.export.BatchSpanProcessor",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/emailservice/email_server.py",
+      "to": "opentelemetry.exporter.otlp.proto.grpc.trace_exporter.OTLPSpanExporter",
+      "specifier": "opentelemetry.exporter.otlp.proto.grpc.trace_exporter.OTLPSpanExporter",
+      "resolvedPath": "opentelemetry.exporter.otlp.proto.grpc.trace_exporter.OTLPSpanExporter",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/emailservice/email_server.py",
+      "to": "logger.getJSONLogger",
+      "specifier": "logger.getJSONLogger",
+      "resolvedPath": "logger.getJSONLogger",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/emailservice/logger.py",
+      "to": "logging",
+      "specifier": "logging",
+      "resolvedPath": "logging",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/emailservice/logger.py",
+      "to": "sys",
+      "specifier": "sys",
+      "resolvedPath": "sys",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/emailservice/logger.py",
+      "to": "pythonjsonlogger.jsonlogger",
+      "specifier": "pythonjsonlogger.jsonlogger",
+      "resolvedPath": "pythonjsonlogger.jsonlogger",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/loadgenerator/locustfile.py",
+      "to": "random",
+      "specifier": "random",
+      "resolvedPath": "random",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/loadgenerator/locustfile.py",
+      "to": "locust.FastHttpUser",
+      "specifier": "locust.FastHttpUser",
+      "resolvedPath": "locust.FastHttpUser",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/loadgenerator/locustfile.py",
+      "to": "locust.TaskSet",
+      "specifier": "locust.TaskSet",
+      "resolvedPath": "locust.TaskSet",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/loadgenerator/locustfile.py",
+      "to": "locust.between",
+      "specifier": "locust.between",
+      "resolvedPath": "locust.between",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/loadgenerator/locustfile.py",
+      "to": "faker.Faker",
+      "specifier": "faker.Faker",
+      "resolvedPath": "faker.Faker",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/loadgenerator/locustfile.py",
+      "to": "datetime",
+      "specifier": "datetime",
+      "resolvedPath": "datetime",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/recommendationservice/client.py",
+      "to": "sys",
+      "specifier": "sys",
+      "resolvedPath": "sys",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/recommendationservice/client.py",
+      "to": "grpc",
+      "specifier": "grpc",
+      "resolvedPath": "grpc",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/recommendationservice/client.py",
+      "to": "demo_pb2",
+      "specifier": "demo_pb2",
+      "resolvedPath": "demo_pb2",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/recommendationservice/client.py",
+      "to": "demo_pb2_grpc",
+      "specifier": "demo_pb2_grpc",
+      "resolvedPath": "demo_pb2_grpc",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/recommendationservice/client.py",
+      "to": "logger.getJSONLogger",
+      "specifier": "logger.getJSONLogger",
+      "resolvedPath": "logger.getJSONLogger",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/recommendationservice/demo_pb2.py",
+      "to": "google.protobuf.internal.builder",
+      "specifier": "google.protobuf.internal.builder",
+      "resolvedPath": "google.protobuf.internal.builder",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/recommendationservice/demo_pb2.py",
+      "to": "google.protobuf.descriptor",
+      "specifier": "google.protobuf.descriptor",
+      "resolvedPath": "google.protobuf.descriptor",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/recommendationservice/demo_pb2.py",
+      "to": "google.protobuf.descriptor_pool",
+      "specifier": "google.protobuf.descriptor_pool",
+      "resolvedPath": "google.protobuf.descriptor_pool",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/recommendationservice/demo_pb2.py",
+      "to": "google.protobuf.symbol_database",
+      "specifier": "google.protobuf.symbol_database",
+      "resolvedPath": "google.protobuf.symbol_database",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/recommendationservice/demo_pb2_grpc.py",
+      "to": "grpc",
+      "specifier": "grpc",
+      "resolvedPath": "grpc",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/recommendationservice/demo_pb2_grpc.py",
+      "to": "demo_pb2",
+      "specifier": "demo_pb2",
+      "resolvedPath": "demo_pb2",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/recommendationservice/logger.py",
+      "to": "logging",
+      "specifier": "logging",
+      "resolvedPath": "logging",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/recommendationservice/logger.py",
+      "to": "sys",
+      "specifier": "sys",
+      "resolvedPath": "sys",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/recommendationservice/logger.py",
+      "to": "pythonjsonlogger.jsonlogger",
+      "specifier": "pythonjsonlogger.jsonlogger",
+      "resolvedPath": "pythonjsonlogger.jsonlogger",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/recommendationservice/recommendation_server.py",
+      "to": "os",
+      "specifier": "os",
+      "resolvedPath": "os",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/recommendationservice/recommendation_server.py",
+      "to": "random",
+      "specifier": "random",
+      "resolvedPath": "random",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/recommendationservice/recommendation_server.py",
+      "to": "time",
+      "specifier": "time",
+      "resolvedPath": "time",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/recommendationservice/recommendation_server.py",
+      "to": "traceback",
+      "specifier": "traceback",
+      "resolvedPath": "traceback",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/recommendationservice/recommendation_server.py",
+      "to": "concurrent.futures",
+      "specifier": "concurrent.futures",
+      "resolvedPath": "concurrent.futures",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/recommendationservice/recommendation_server.py",
+      "to": "google.auth.exceptions.DefaultCredentialsError",
+      "specifier": "google.auth.exceptions.DefaultCredentialsError",
+      "resolvedPath": "google.auth.exceptions.DefaultCredentialsError",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/recommendationservice/recommendation_server.py",
+      "to": "grpc",
+      "specifier": "grpc",
+      "resolvedPath": "grpc",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/recommendationservice/recommendation_server.py",
+      "to": "demo_pb2",
+      "specifier": "demo_pb2",
+      "resolvedPath": "demo_pb2",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/recommendationservice/recommendation_server.py",
+      "to": "demo_pb2_grpc",
+      "specifier": "demo_pb2_grpc",
+      "resolvedPath": "demo_pb2_grpc",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/recommendationservice/recommendation_server.py",
+      "to": "grpc_health.v1.health_pb2",
+      "specifier": "grpc_health.v1.health_pb2",
+      "resolvedPath": "grpc_health.v1.health_pb2",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/recommendationservice/recommendation_server.py",
+      "to": "grpc_health.v1.health_pb2_grpc",
+      "specifier": "grpc_health.v1.health_pb2_grpc",
+      "resolvedPath": "grpc_health.v1.health_pb2_grpc",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/recommendationservice/recommendation_server.py",
+      "to": "opentelemetry.trace",
+      "specifier": "opentelemetry.trace",
+      "resolvedPath": "opentelemetry.trace",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/recommendationservice/recommendation_server.py",
+      "to": "opentelemetry.instrumentation.grpc.GrpcInstrumentorClient",
+      "specifier": "opentelemetry.instrumentation.grpc.GrpcInstrumentorClient",
+      "resolvedPath": "opentelemetry.instrumentation.grpc.GrpcInstrumentorClient",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/recommendationservice/recommendation_server.py",
+      "to": "opentelemetry.instrumentation.grpc.GrpcInstrumentorServer",
+      "specifier": "opentelemetry.instrumentation.grpc.GrpcInstrumentorServer",
+      "resolvedPath": "opentelemetry.instrumentation.grpc.GrpcInstrumentorServer",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/recommendationservice/recommendation_server.py",
+      "to": "opentelemetry.sdk.trace.TracerProvider",
+      "specifier": "opentelemetry.sdk.trace.TracerProvider",
+      "resolvedPath": "opentelemetry.sdk.trace.TracerProvider",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/recommendationservice/recommendation_server.py",
+      "to": "opentelemetry.sdk.trace.export.BatchSpanProcessor",
+      "specifier": "opentelemetry.sdk.trace.export.BatchSpanProcessor",
+      "resolvedPath": "opentelemetry.sdk.trace.export.BatchSpanProcessor",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/recommendationservice/recommendation_server.py",
+      "to": "opentelemetry.exporter.otlp.proto.grpc.trace_exporter.OTLPSpanExporter",
+      "specifier": "opentelemetry.exporter.otlp.proto.grpc.trace_exporter.OTLPSpanExporter",
+      "resolvedPath": "opentelemetry.exporter.otlp.proto.grpc.trace_exporter.OTLPSpanExporter",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/recommendationservice/recommendation_server.py",
+      "to": "logger.getJSONLogger",
+      "specifier": "logger.getJSONLogger",
+      "resolvedPath": "logger.getJSONLogger",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/shoppingassistantservice/shoppingassistantservice.py",
+      "to": "os",
+      "specifier": "os",
+      "resolvedPath": "os",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/shoppingassistantservice/shoppingassistantservice.py",
+      "to": "google.cloud.secretmanager_v1",
+      "specifier": "google.cloud.secretmanager_v1",
+      "resolvedPath": "google.cloud.secretmanager_v1",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/shoppingassistantservice/shoppingassistantservice.py",
+      "to": "urllib.parse.unquote",
+      "specifier": "urllib.parse.unquote",
+      "resolvedPath": "urllib.parse.unquote",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/shoppingassistantservice/shoppingassistantservice.py",
+      "to": "langchain_core.messages.HumanMessage",
+      "specifier": "langchain_core.messages.HumanMessage",
+      "resolvedPath": "langchain_core.messages.HumanMessage",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/shoppingassistantservice/shoppingassistantservice.py",
+      "to": "langchain_google_genai.ChatGoogleGenerativeAI",
+      "specifier": "langchain_google_genai.ChatGoogleGenerativeAI",
+      "resolvedPath": "langchain_google_genai.ChatGoogleGenerativeAI",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/shoppingassistantservice/shoppingassistantservice.py",
+      "to": "langchain_google_genai.GoogleGenerativeAIEmbeddings",
+      "specifier": "langchain_google_genai.GoogleGenerativeAIEmbeddings",
+      "resolvedPath": "langchain_google_genai.GoogleGenerativeAIEmbeddings",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/shoppingassistantservice/shoppingassistantservice.py",
+      "to": "flask.Flask",
+      "specifier": "flask.Flask",
+      "resolvedPath": "flask.Flask",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/shoppingassistantservice/shoppingassistantservice.py",
+      "to": "flask.request",
+      "specifier": "flask.request",
+      "resolvedPath": "flask.request",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/shoppingassistantservice/shoppingassistantservice.py",
+      "to": "langchain_google_alloydb_pg.AlloyDBEngine",
+      "specifier": "langchain_google_alloydb_pg.AlloyDBEngine",
+      "resolvedPath": "langchain_google_alloydb_pg.AlloyDBEngine",
+      "unresolved": true
+    },
+    {
+      "kind": "import",
+      "from": "microservices-demo/src/shoppingassistantservice/shoppingassistantservice.py",
+      "to": "langchain_google_alloydb_pg.AlloyDBVectorStore",
+      "specifier": "langchain_google_alloydb_pg.AlloyDBVectorStore",
+      "resolvedPath": "langchain_google_alloydb_pg.AlloyDBVectorStore",
+      "unresolved": true
+    }
+  ]
+}
