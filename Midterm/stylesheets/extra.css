@@ -1,0 +1,209 @@
+/* ============================================================
+   KTPM — "Control Plane Console" theme cho MkDocs Material
+   Chủ đề: service mesh / observability. Accent teal = healthy
+   link, amber = metrics. Light = blueprint, Dark = ban đêm.
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap');
+
+:root {
+  --ktpm-teal: #12b5a3;   /* signal: healthy mesh link */
+  --ktpm-teal-bright: #2fd7c4;
+  --ktpm-amber: #e0902a;  /* trace: metrics / attention */
+  --ktpm-radius: 10px;
+  --md-code-font: "JetBrains Mono", "IBM Plex Mono", monospace;
+}
+
+/* ---------- LIGHT = blueprint kiến trúc (giấy xanh lạnh) ---------- */
+[data-md-color-scheme="default"] {
+  --md-default-bg-color: #eef2f7;
+  --md-default-fg-color: #14212f;
+  --md-default-fg-color--light: #3f5266;
+  --md-default-fg-color--lighter: #6b7d90;
+  --md-primary-fg-color: #0f2033;
+  --md-primary-bg-color: #eaf4f2;
+  --md-accent-fg-color: #0c8f81;
+  --md-typeset-a-color: #0c8f81;
+  --ktpm-hero-1: #10314e;
+  --ktpm-hero-2: #0b1a2b;
+  --ktpm-grid: rgba(18,181,163,0.16);
+  --ktpm-card-bg: #ffffff;
+  --ktpm-card-line: #d6e0ea;
+  --ktpm-chip-bg: #ffffff;
+}
+
+/* ---------- DARK = control plane ban đêm ---------- */
+[data-md-color-scheme="slate"] {
+  --md-hue: 222;
+  --md-default-bg-color: #0e1420;
+  --md-default-fg-color: #e6edf5;
+  --md-default-fg-color--light: #aebacd;
+  --md-default-fg-color--lighter: #8091a8;
+  --md-code-bg-color: #131c2b;
+  --md-code-fg-color: #d6e2f2;
+  --md-primary-fg-color: #0b111b;
+  --md-primary-bg-color: #e6edf5;
+  --md-accent-fg-color: var(--ktpm-teal-bright);
+  --md-typeset-a-color: var(--ktpm-teal-bright);
+  --ktpm-hero-1: #101a2b;
+  --ktpm-hero-2: #0b1220;
+  --ktpm-grid: rgba(47,215,196,0.14);
+  --ktpm-card-bg: #131c2b;
+  --ktpm-card-line: #223349;
+  --ktpm-chip-bg: #0f1826;
+}
+
+/* ---------- Typography ---------- */
+.md-typeset h1, .md-typeset h2, .md-typeset h3,
+.md-header__title, .md-nav__title {
+  font-family: "Space Grotesk", var(--md-text-font, sans-serif);
+  letter-spacing: -0.02em;
+  font-weight: 600;
+}
+.md-typeset h1 { font-weight: 700; }
+.md-typeset h2 {
+  border-top: 1px solid var(--ktpm-card-line);
+  padding-top: 1.4rem;
+  margin-top: 2.2rem;
+}
+
+/* Header: dải mesh mảnh dưới đáy */
+.md-header {
+  box-shadow: 0 1px 0 var(--ktpm-card-line);
+}
+.md-header--shadow { box-shadow: 0 0 0.4rem rgba(0,0,0,.25); }
+.md-tabs {
+  border-bottom: 1px solid var(--ktpm-card-line);
+}
+
+/* nav active = teal */
+.md-nav__link--active, .md-nav__link:focus, .md-nav__link:hover {
+  color: var(--md-accent-fg-color) !important;
+}
+.md-nav__item .md-nav__link--active { font-weight: 600; }
+
+/* ---------- HERO ---------- */
+.ktpm-hero {
+  position: relative;
+  margin: -0.6rem 0 2.2rem;
+  padding: 2.6rem 2rem 2.2rem;
+  border-radius: var(--ktpm-radius);
+  overflow: hidden;
+  background:
+    radial-gradient(120% 140% at 88% 0%, rgba(18,181,163,0.18), transparent 55%),
+    linear-gradient(160deg, var(--ktpm-hero-1), var(--ktpm-hero-2));
+  border: 1px solid var(--ktpm-card-line);
+  color: #eaf1fb;
+}
+.ktpm-hero__grid {
+  position: absolute; inset: 0;
+  background-image:
+    linear-gradient(var(--ktpm-grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--ktpm-grid) 1px, transparent 1px);
+  background-size: 26px 26px;
+  mask-image: radial-gradient(120% 120% at 85% 0%, #000 30%, transparent 75%);
+  pointer-events: none;
+}
+.ktpm-hero__eyebrow {
+  font-family: var(--md-code-font);
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--ktpm-teal-bright);
+  margin: 0 0 0.6rem;
+}
+.md-typeset .ktpm-hero h1,
+.ktpm-hero__title {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 2.3rem;
+  line-height: 1.08;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  margin: 0 0 0.5rem;
+  color: #f4f8ff;
+}
+.ktpm-hero__sub {
+  max-width: 44rem;
+  color: #b9c7db;
+  font-size: 0.92rem;
+  margin: 0 0 1.3rem;
+}
+
+/* status bar telemetry (số liệu thật) */
+.ktpm-status {
+  display: flex; flex-wrap: wrap; gap: 0.5rem;
+  font-family: var(--md-code-font);
+  font-size: 0.76rem;
+}
+.ktpm-status__chip {
+  display: inline-flex; align-items: center; gap: 0.42rem;
+  padding: 0.32rem 0.62rem;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.12);
+  color: #dbe6f4;
+  backdrop-filter: blur(2px);
+}
+.ktpm-status__dot {
+  width: 7px; height: 7px; border-radius: 50%;
+  background: var(--ktpm-teal-bright);
+  box-shadow: 0 0 0 2px rgba(47,215,196,0.22);
+}
+.ktpm-status__chip--metric { color: var(--ktpm-amber); }
+.ktpm-status__chip--metric .ktpm-status__dot { background: var(--ktpm-amber); box-shadow: 0 0 0 2px rgba(224,144,42,0.22); }
+
+/* ---------- Entry cards (lối vào 3 phần) ---------- */
+.ktpm-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 0.8rem;
+  margin: 1.6rem 0 0.4rem;
+}
+.md-typeset .ktpm-card {
+  display: block;
+  padding: 1.05rem 1.1rem;
+  border-radius: var(--ktpm-radius);
+  background: var(--ktpm-card-bg);
+  border: 1px solid var(--ktpm-card-line);
+  color: var(--md-default-fg-color);
+  text-decoration: none;
+  transition: border-color .15s ease, transform .15s ease, box-shadow .15s ease;
+}
+.md-typeset .ktpm-card:hover {
+  border-color: var(--ktpm-teal);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px -14px rgba(18,181,163,0.55);
+}
+.ktpm-card__tag {
+  display: block;
+  font-family: var(--md-code-font);
+  font-size: 0.68rem; letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--ktpm-teal);
+}
+.ktpm-card__title { display: block; font-weight: 600; font-size: 1.02rem; margin: 0.3rem 0 0.25rem; font-family: "Space Grotesk", sans-serif; }
+.ktpm-card__desc { display: block; font-size: 0.82rem; line-height: 1.45; color: var(--md-default-fg-color--light); margin: 0; }
+
+/* ---------- Code & admonition accents ---------- */
+.md-typeset pre > code {
+  border-radius: var(--ktpm-radius);
+}
+.md-typeset .admonition, .md-typeset details {
+  border-radius: var(--ktpm-radius);
+  border-left-width: 3px;
+}
+.md-typeset code { font-variant-ligatures: none; }
+
+/* metric số trong bảng nổi bật */
+.md-typeset table td:first-child { font-weight: 500; }
+
+/* Responsive hero */
+@media screen and (max-width: 44.98em) {
+  .ktpm-hero { padding: 2rem 1.2rem 1.8rem; }
+  .ktpm-hero__title, .md-typeset .ktpm-hero h1 { font-size: 1.7rem; }
+}
+
+/* reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .md-typeset .ktpm-card { transition: none; }
+  .md-typeset .ktpm-card:hover { transform: none; }
+}

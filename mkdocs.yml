@@ -6,32 +6,37 @@ use_directory_urls: true
 theme:
   name: material
   language: vi
+  font:
+    text: IBM Plex Sans
+    code: JetBrains Mono
   palette:
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: indigo
-      accent: indigo
-      toggle:
-        icon: material/brightness-7
-        name: Chuyển tối
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: indigo
-      accent: indigo
       toggle:
-        icon: material/brightness-4
-        name: Chuyển sáng
+        icon: material/weather-night
+        name: Chuyển sáng (blueprint)
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/weather-sunny
+        name: Chuyển tối (control plane)
   features:
     - navigation.sections
     - navigation.top
     - navigation.tracking
+    - navigation.instant
+    - navigation.footer
     - toc.follow
     - content.code.copy
+    - content.code.annotate
     - search.suggest
     - search.highlight
 
+extra_css:
+  - stylesheets/extra.css
+
 nav:
-  - Trang chủ: README.md
+  - Trang chủ: index.md
   - 🎯 Ngày thi: 00-EXAM-DAY.md
   - 1a · Scalability: 01-scalability/SCALABILITY.md
   - 1b · Security: 02-security/SECURITY-AUDIT.md
@@ -56,6 +61,7 @@ markdown_extensions:
 
 exclude_docs: |
   HOME.md
+  README.md
   check.sh
   *.json
   01-scalability/k6-test.js
