@@ -1,3 +1,7 @@
+---
+tags: [ktpm, ktpm/architecture, views]
+---
+
 # Phần 2 — Biểu diễn kiến trúc: Online Boutique (4+1 Views + Database Schema + Security & Concurrency View)
 
 Phương pháp: **Boxes & Arrows + 4+1 Views** (mô hình Kruchten) + **Database Schema**. Mỗi view trả lời **một mối quan tâm (concern)** của một nhóm stakeholder. Sơ đồ vẽ bằng Mermaid — mở file này trong VS Code (Preview) hoặc GitHub để render.

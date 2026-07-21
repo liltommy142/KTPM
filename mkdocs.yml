@@ -1,0 +1,61 @@
+site_name: KTPM — Ôn thi Kiến trúc Phần mềm
+site_description: Bộ tài liệu ôn thi vấn đáp giữa kỳ môn Kiến trúc Phần mềm (Online Boutique + Istio).
+docs_dir: Midterm
+use_directory_urls: true
+
+theme:
+  name: material
+  language: vi
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Chuyển tối
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Chuyển sáng
+  features:
+    - navigation.sections
+    - navigation.top
+    - navigation.tracking
+    - toc.follow
+    - content.code.copy
+    - search.suggest
+    - search.highlight
+
+nav:
+  - Trang chủ: README.md
+  - 🎯 Ngày thi: 00-EXAM-DAY.md
+  - 1a · Scalability: 01-scalability/SCALABILITY.md
+  - 1b · Security: 02-security/SECURITY-AUDIT.md
+  - 2 · Kiến trúc (8 view): 03-architecture/ARCHITECTURE.md
+  - 3 · Runbook demo: 04-demo-runbook/RUNBOOK.md
+  - Lý thuyết vấn đáp: 05-theory/CHEATSHEET.md
+  - Kết quả chạy thật: RESULTS.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - tables
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+
+exclude_docs: |
+  HOME.md
+  check.sh
+  *.json
+  01-scalability/k6-test.js

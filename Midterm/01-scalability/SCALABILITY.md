@@ -1,3 +1,7 @@
+---
+tags: [ktpm, ktpm/scalability, quality-attributes]
+---
+
 # Phần 1a — Demo Scalability bằng k6 trên Online Boutique
 
 > ✅ **Đã chạy thật** trên máy này — số liệu và bài học đầy đủ ở `../RESULTS.md`.

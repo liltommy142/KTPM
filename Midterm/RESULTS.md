@@ -1,3 +1,7 @@
+---
+tags: [ktpm, evidence]
+---
+
 # Kết quả chạy thử thực tế (dry-run toàn pipeline)
 
 > Chạy ngày 2026-07-22 trên máy này (macOS arm64, Docker Desktop + minikube). Đây là bằng chứng "đã chạy được thật", kèm số liệu và các sự cố gặp phải + cách khắc phục.

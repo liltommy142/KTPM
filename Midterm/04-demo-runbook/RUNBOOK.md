@@ -1,3 +1,7 @@
+---
+tags: [ktpm, ktpm/microservices, devops]
+---
+
 # Phần 3 — Runbook demo: Microservices + Docker + Kubernetes + Istio + Prometheus + Grafana
 
 > ✅ **Toàn bộ runbook này ĐÃ được chạy thử thành công trên máy này** (2026-07-22). Xem số liệu & sự cố thực tế ở `../RESULTS.md`. Các cảnh báo ⚠️ bên dưới là bài học rút ra từ lần chạy thật.

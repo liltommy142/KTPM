@@ -18,3 +18,13 @@ __pycache__/
 *.pyc
 .venv/
 venv/
+
+# Obsidian (giữ config chung, bỏ state cục bộ của máy)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+.trash/
+
+# MkDocs build output
+site/
+_site/

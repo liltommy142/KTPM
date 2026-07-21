@@ -1,3 +1,7 @@
+---
+tags: [ktpm, ktpm/security, quality-attributes]
+---
+
 # Phần 1b — Security Audit Online Boutique (AI-assisted, Claude Code)
 
 Đây là kết quả audit bằng **Claude Code** đọc trực tiếp mã nguồn `Exercises/microservices-demo`. Mỗi phát hiện có **file:line thật** để mở ra chỉ cho thầy. Đây là demo app học tập của Google — có chủ đích để insecure ở vài chỗ; nhiệm vụ vấn đáp là **nhận ra và giải thích**, không phải chê.

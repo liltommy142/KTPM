@@ -1,3 +1,7 @@
+---
+tags: [ktpm, exam-day]
+---
+
 # 🎯 NGÀY THI — Playbook demo tại chỗ
 
 > Thầy coi thi: *"chuẩn bị sẵn máy, môi trường, API key; thi tại chỗ, thầy tới từng nhóm xem demo + hỏi + chấm; câu hỏi có thể nhắm vào BẤT KỲ phần nào của đề."*

@@ -1,3 +1,7 @@
+---
+tags: [ktpm, ktpm/theory]
+---
+
 # Cheat Sheet Vấn đáp — Kiến trúc Phần mềm
 
 Trả lời ngắn gọn, đúng thuật ngữ. Dựa trên slide môn học (`Slides/01–05`) + đề thi.
